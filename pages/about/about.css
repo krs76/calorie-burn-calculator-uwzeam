@@ -1,0 +1,32 @@
+ion-content {
+  background: #1c92d2;  
+  background: -webkit-linear-gradient(to bottom, white, #f2fcfe, #1c92d2); 
+  background: linear-gradient(to bottom, white, #f2fcfe, #1c92d2); 
+}
+h2{
+  color: #0063dd;
+  text-align: center;
+}
+ion-title {
+  text-align: center;
+}
+button {
+  margin: 0 auto;
+  display: block;
+  border-radius: 30px;
+  width: 75%;
+  background-color: white;
+  color: black; 
+  border: 2px solid #0063dd;
+}
+button:hover {
+  color: white;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+ion-card-header {
+  text-align: center;
+}
+

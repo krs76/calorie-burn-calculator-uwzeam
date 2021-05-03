@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <ion-title>
+      CALCULATOR
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>CALORIES BURNED CALCULATOR</h2>
+
+   <ion-item>
+    <ion-label>Choose activity:</ion-label>
+    <ion-select [(ngModel)]= "mets">
+    <ion-option value = 1.3 >Sitting</ion-option>
+    <ion-option value = 1.8 >Standing</ion-option>
+    <ion-option value = 3.5 >Housework</ion-option>
+    <ion-option value = 3.5 >Weight Training</ion-option>
+    <ion-option value = 8.0 >Bicyling 12-14 mph</ion-option>
+    <ion-option value = 8.0 >Single Tennis</ion-option>
+
+    </ion-select>
+  </ion-item>
+   
+  <ion-item>
+    <ion-label>Weight in kilogams:</ion-label>
+    <ion-input type="number" [(ngModel)]= "weight"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Duration in minutes:</ion-label>
+    <ion-input type="number" [(ngModel)]= "duration"></ion-input>
+  </ion-item>
+<br/><br>
+  <button ion-button color="secondary" (click)="calculateCBC()">
+    Calculate
+  </button>
+
+<br/><br>
+<ion-card [hidden]="!showMessage"> 
+    <ion-card-header>
+      CALORIES BURNED BAR CHART
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+      <p>You will burn {{cal}} calories on your chosen activity. <br> Please refer to the chart above to see how it compares to other activities. <br> Congratulations! You have lost {{weightLoss}}kg! </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,23 @@
+ion-content {
+  background: #1c92d2;  
+  background: -webkit-linear-gradient(to bottom, white, #f2fcfe, #1c92d2); 
+  background: linear-gradient(to bottom, white, white, #f2fcfe, #1c92d2); 
+}
+ion-title {
+  text-align: center;
+}
+h1{
+  color: #0063dd;
+  text-align: center;
+}
+h2{
+  text-align: left;
+  font-size: large;
+  margin: 10px;
+}
+ion-title {
+  text-align: center;
+}
+p{
+  text-align: center;
+}

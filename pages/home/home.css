@@ -1,0 +1,21 @@
+ion-content {
+  background: #1c92d2;  
+  background: -webkit-linear-gradient(to bottom, white, #f2fcfe, #1c92d2); 
+  background: linear-gradient(to bottom, white, white, #f2fcfe, #1c92d2); 
+}
+h2{
+  color: #0063dd;
+  text-align: center;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+ion-title {
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+
